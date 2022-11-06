@@ -11,27 +11,29 @@
   <title>Riyas-PORTFOLIO</title>
 
 </head>
-<bod>
+<body>
   <div id="navabar">
     <div class="cont">
       <p>RIYAS S</p>
       <ul class="x">
-      <a href=".home">Home</a>
-      <a href="">About</a>
-      <a href="">Skills</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+      <a href="#home"id="po">Home</a>
+      <a href="#about" id="po">About</a>
+      <a href="#skill" id="po">Skills</a>
+      <a href="#project" id="po">Projects</a>
+      <a href="#contact" id="po">Contact</a>
     </ul>
     <img class="close" src="./image/close-outline.svg">
     <img class="open" src ="./image/menu-outline.svg">
   </div>
   </div>
+
+  <!-- ******Home********** -->
   
-  <div class="home">
+  <div class="home" id="home">
 
     <div class="logo">
-      <img src="./image/linkedin.png">
-     <img src="./image/github.png">
+      <img src="./image/linkedin.png" onclick="window.open('https://github.com/RIYAS11','_blank')">
+     <img src="./image/github.png" onclick="window.open('https://www.linkedin.com/in/riyas973/','_blank')"> 
     </div>
     <div class="names">
 
@@ -39,11 +41,14 @@
       <h1 class="fullname">Riyas S</h1>
       <h1 class="he">I build things for the web.<h1>
       <p class="dev">I am Java Back-End Developer  , <span class="chg"></span></p>
-       <button class="contactme">Contact Me</button>
+       <a href="#contact" class="contactme"id="contactme">Contact Me</a>
     </div>
   </div>
 
-  <div class="about">
+
+    <!-- 2nd home  -->
+
+    <div class="about"id="about">
     <div class="me">
       <h2>About Me</h2>
       <p>My Introduction</p>
@@ -63,310 +68,336 @@
         <p>Problems <br> solved in DSA</p>
         <p>Projects <br>worked</p>
       </div>     
-      <button class="resume"><p>Resume</p> <img src="./image/download.png"></button>
+      <a
+      href="./packages/RIYAS_S_Resume.pdf"
+                download="RIYAS_S_Resume"
+                title="click to download" 
+      class="resume"><p>Resume</p> <img src="./image/download.png"></a>
     </div>
   </div>
-
 </div>
 
+
+<!-- qulaifiaction -->
 <div class="qual">
 <h2>Qualification</h2>
 <p>My Journey</p>
 </div>
 
-
 <!--==================== QUALIFICATION CONTENT 1 ====================-->
 <div class="qualification__sections">
-    <div class="edu">
-      <img src="./image/education.png" alt="education"> 
-      <p>Education</p>
-    </div>
-    <!--==================== QUALIFICATION 1 ====================-->
-    <div class="qualification__data">
-      <div>
-        <h3 class="qualification__title">
-          Full Stack Web Development
-        </h3>
-        <span class="qualification__subtitle"
-          >Masai School, Bangalore</span
-        >
-        <div class="qualification__calendar">
-          <img src="./image/calender.png">
-          <p>Apr 2022 - Nov 2022</p>
-        </div>
-      </div>
-
-      <div>
-        <span class="qualification__rounder"></span>
-        <span class="qualification__line"></span>
-      </div>
-    </div>
-
-    <!--==================== QUALIFICATION 2 ====================-->
-    <div class="qualification__data">
-      <div></div>
-      <div>
-        <span class="qualification__rounder"></span>
-        <span class="qualification__line"></span>
-      </div>
-
-      <div>
-        <h3 class="qualification__title">BCA</h3>
-        <span class="qualification__subtitle"
-          >CHMM College, Kerala</span
-        >
-        <div class="qualification__calendar">
-           <img src="./image/calender.png">
-          <p>June 2018 - Oct 2021</p>
-        </div>
-      </div>
-    </div>
+  <div class="edu">
+    <img src="./image/education.png" alt="education"> 
+    <p>Education</p>
   </div>
-
-   <!-- Sills -->
-
-   <div class="skill">
-    <div class="title">
-        <h2>Skills</h2>
-        <p>My technologies</p>
-    </div>
-    <div class="skills">
-      <div>
-        <img src="./image/java.png" alt="java">
-        <h5>Java</h5>
-      </div>
-      <div>
-        <img src="./image/spring-boot.png" alt="spring">
-        <h5>Spring</h5>
-      </div>
-      <div>
-        <img src="./image/toppng.com-hibernate-logo-491x512.png" alt="hibernate">
-        <h5>Hibernate</h5>
-      </div>
-      <div>
-        <img src="./image/mysql.png" alt="sql">
-        <h5>MySQL</h5>
-      </div>
-      <div>
-        <img src="./image/aws.png" alt="aws">
-        <h5>AWS</h5>
-      </div>
-      <div>
-        <img src="./image/html.png" alt="html">
-        <h5>HTML</h5>
-      </div>
-      <div>
-        <img src="./image/css3.png" alt="css">
-        <h5>CSS</h5>
-      </div>
-      <div>
-        <img src="./image/javascript.png" alt="js">
-        <h5>JavaScript</h5>
-      </div>
-    </div>
-   </div>
-   <div class="projects">
-    <h2>Projects</h2>
-    <p>My recent works</p>
-</div>
-<div class="project">
-  <div>
-    <img src="./image/Screenshot (677).png" alt="myntra">
-     <div class="web">
-      <div>
-      <h5>Myntra Clone -></h5>
-    </div>
+  <!--==================== QUALIFICATION 1 ====================-->
+  <div class="qualification__data">
     <div>
-      <img src="./image/git.png" alt="git">
-      <img src="./image/open-6013305.png" alt="open">
-     </div>
-    </div>
-    <p>An e-commerce website that the Users can purchase  fashion and lifestyle from various  brands  </p>
-     <p>HTML | CSS | JavaScript</p>
-  </div>
-  <div>
-    <img src="./image/Screenshot (678).png" alt="nord">
-    <div class="web">
-      <div>
-     <h5>NordStorm Clone -></h5>
-    </div>
-    <div>
-     <img src="./image/git.png" alt="git">
-     <img src="./image/open-6013305.png" alt="open">
-    </div>
-  </div>
-    <p>An e-commerce website that the Users can purchase  fashion and lifestyle from various  brands  </p>
-    <p>HTML | CSS | JavaScript</p>
-  </div>
-  <div>
-    <img src="./image/Screenshot (679).png" alt="myntra">
-    <div class="web">
-      <div>
-     <h5>Weather App -></h5>
-    </div>
-    <div>
-     <img src="./image/git.png" alt="git">
-     <img src="./image/open-6013305.png" alt="open">
-    </div>
-  </div>
-    <p>This app shows you the weather report of any location where you want to search for. </p>
-    <p>HTML | CSS | JavaScript | API</p>
-  </div>
-</div>
-<div class="git">
-  <h2>GitHub Stats</h2>
-  <p>Contribution on Github
-  </p>
-</div>
-<div class="github-images">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=riyas11&show_icons=true&theme=default"
-    alt="riyas11-github-stats"
-  />
-  <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=riyas11&theme=default"
-    alt="riyas11-github-current-streak-stats"
-  />
-</div>
-
-<div class="calendar"></div>
-
-<div class="contact-me">
-  <h2>Contact Me</h2>
-  <p>Get in touch</p>
-</div>
-
- <!-- ==================== CONTACT ME ==================== -->
-  
-  <div class="contact__container">
-    <div>
-      <div class="contact__information">
-        <img class="contact__icon" src="./image/linkedin.png">
-      </img>
-        <div>
-          <a
-            class="hover-underline"
-            href="https://www.linkedin.com/in/riyas11/"
-            target="_blank"
-            style="color: #6a797c"
-            title="click to open linkedin"
-          >
-            <h3 class="contact__title">Linkedin</h3>
-            <span class="contatc__subtitle">@riyas_s</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact__information">
-        <img class="contact__icon" src="./image/github.png"></img>
-
-        <div>
-          <a
-            class="hover-underline"
-            href="https://github.com/riyas11/"
-            target="_blank"
-            style="color: #6a797c"
-            title="click to open github"
-          >
-            <h3 class="contact__title">GitHub</h3>
-            <span class="contatc__subtitle">@riyas11</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact__information">
-        <img class="contact__icon" src="./image/phone.png"></img>
-
-        <div>
-          <a
-            class="hover-underline"
-            href="tel:+91 8372876775"
-            style="color: #6a797c"
-            title="click to make a call"
-          >
-            <h3 class="contact__title">Call me</h3>
-            <span class="contatc__subtitle">+91 9847972892</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact__information">
-        <img class="contact__icon" src="./image/email.png"></i>
-        <div>
-          <a
-            class="hover-underline"
-            href="mailto:mail.sanajitjana@gmail.com"
-            style="color: #6a797c"
-            title="click to send email"
-          >
-            <h3 class="contact__title">E-mail</h3>
-
-            <span class="contatc__subtitle"
-              >mail.riyass973@gmail.com</span
-            >
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <form  id="contact-form">
-      <div class="contact__inputs">
-        <div class="contact__content">
-          <label for="" class="contact__label">Name</label>
-          <input type="text" class="contact__input" id="name" required />
-        </div>
-
-        <div class="contact__content">
-          <label for="" class="contact__label">E-mail</label>
-          <input
-            type="email"
-            class="contact__input"
-            id="email"
-            required
-          />
-        </div>
-      </div>
-
-      <div class="contact__content">
-        <label for="" class="contact__label">Message</label>
-        <textarea
-          required
-          id="message"
-          cols="0"
-          rows="7"
-          class="contact__input"
-          title="Please fill out the this field."
-        ></textarea>
-      </div>
-
-      <p
-        style="font-size: 12px; margin-top: -15px"
-        title="Put your mail only"
+      <h3 class="qualification__title">
+        Full Stack Web Development
+      </h3>
+      <span class="qualification__subtitle"
+        >Masai School, Bangalore</span
       >
-        <span style="color: #57c9e0">* </span> You will get a confirmation
-        mail after sending the message.
-      </p>
-      <div>
-        <button
-          id="email-submit"
-          class="button button--flex"
-          style="
-            outline: none;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-          "
-          title="Send message"
-        >
-          Send message
-          <img src="./image/send.png">
-        </button>
+      <div class="qualification__calendar">
+        <img src="./image/calender.png">
+        <p>Apr 2022 - Nov 2022</p>
       </div>
-    </form>
-  </div>
-    <div class="footer">
-      
     </div>
+
+    <div>
+      <span class="qualification__rounder"></span>
+      <span class="qualification__line"></span>
+    </div>
+  </div>
+
+  <!--==================== QUALIFICATION 2 ====================-->
+  <div class="qualification__data">
+    <div></div>
+    <div>
+      <span class="qualification__rounder"></span>
+      <span class="qualification__line"></span>
+    </div>
+    <div>
+      <h3 class="qualification__title">BCA</h3>
+      <span class="qualification__subtitle"
+        >CHMM College, Kerala</span
+      >
+      <div class="qualification__calendar">
+         <img src="./image/calender.png">
+        <p>June 2018 - Oct 2021</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+                   <!-- Sills -->
+
+                   <div class="title" id="skill">
+                       <h2>Skills</h2>
+                       <p>My technologies</p>
+                   </div>
+<div class="skill">
+  <div class="skills">
+    <div>
+      <img src="./image/java.png" alt="java">
+      <h5>Java</h5>
+    </div>
+    <div>
+      <img src="./image/spring-boot.png" alt="spring">
+      <h5>Spring</h5>
+    </div>
+    <div>
+      <img src="./image/toppng.com-hibernate-logo-491x512.png" alt="hibernate">
+      <h5>Hibernate</h5>
+    </div>
+    <div>
+      <img src="./image/mysql.png" alt="sql">
+      <h5>MySQL</h5>
+    </div>
+    <div>
+      <img src="./image/aws.png" alt="aws">
+      <h5>AWS</h5>
+    </div>
+    <div>
+      <img src="./image/html.png" alt="html">
+      <h5>HTML</h5>
+    </div>
+    <div>
+      <img src="./image/css3.png" alt="css">
+      <h5>CSS</h5>
+    </div>
+    <div>
+      <img src="./image/javascript.png" alt="js">
+      <h5>JavaScript</h5>
+    </div>
+  </div>
+ </div>
+
+             <!-- PROJECT -->
+
+
+
+             <div class="projects" id="project">
+              <h2>Projects</h2>
+              <p>My recent works</p>
+          </div>
+          <div class="project">
+            <div>
+              <img src="./image/Screenshot (677).png" alt="myntra">
+               <div class="web">
+                <div>
+                <h5>Myntra Clone -></h5>
+              </div>
+              <div>
+                <img src="./image/git.png" class="pgit1" onclick="window.open('https://github.com/SohamDoshi/can-water-5067','_blank');" alt="git">
+                <img src="./image/open-6013305.png" onclick="window.open('https://nimble-praline-16a204.netlify.app/','_blank');" class="pdoc" alt="open">
+               </div>
+              </div>
+              <p>An e-commerce website that the Users can purchase  fashion and lifestyle from various  brands  </p>
+               <p>HTML | CSS | JavaScript</p>
+            </div>
+            <div>
+              <img src="./image/Screenshot (678).png" alt="nord">
+              <div class="web">
+                <div>
+               <h5>NordStorm Clone -></h5>
+              </div>
+              <div>
+               <img src="./image/git.png"  onclick="window.open('https://github.com/gopalkrushnas063/NORDSTROM','_blank');"  alt="git">
+               <img src="./image/open-6013305.png" onclick="window.open('https://chic-mandazi-261870.netlify.app/','_blank');"  alt="open">
+              </div>
+            </div>
+              <p>An e-commerce website that the Users can purchase  fashion and lifestyle from various  brands  </p>
+              <p>HTML | CSS | JavaScript</p>
+            </div>
+            <div>
+              <img src="./image/Screenshot (679).png" alt="myntra">
+              <div class="web">
+                <div>
+               <h5>Weather App -></h5>
+              </div>
+              <div>
+               <img src="./image/git.png" onclick="window.open('','_blank');"  alt="git">
+               <img src="./image/open-6013305.png" onclick="window.open('https://splendorous-pavlova-025769.netlify.app/','_blank');"  alt="open">
+              </div>
+            </div>
+              <p>This app shows you the weather report of any location where you want to search for. </p>
+              <p>HTML | CSS | JavaScript | API</p>
+            </div>
+          </div>
+
+
+            <!-- github CALENEDER AND STAT -->
+
+
+            <div class="git">
+              <h2>GitHub Stats</h2>
+              <p>Contribution on Github
+              </p>
+            </div>
+            <div class="github-images">
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=riyas11&show_icons=true&theme=default"
+                alt="riyas11-github-stats"
+              />
+              <img
+                src="https://github-readme-streak-stats.herokuapp.com/?user=riyas11&theme=default"
+                alt="riyas11-github-current-streak-stats"
+              />
+            </div>
+            
+            <div class="calendar"></div>
+
+    <!-- contactme -->
+
+
+    <div class="contact-me" id="contact">
+      <h2>Contact Me</h2>
+      <p>Get in touch</p>
+    </div>
+    
+     <!-- ==================== CONTACT ME ==================== -->
+      
+      <div class="contact__container">
+        <div>
+          <div class="contact__information">
+            <img class="contact__icon" src="./image/linkedin.png">
+          </img>
+            <div>
+              <a
+                class="hover-underline"
+                href="https://www.linkedin.com/in/riyas11/"
+                target="_blank"
+                style="color: #6a797c"
+                title="click to open linkedin"
+              >
+                <h3 class="contact__title">Linkedin</h3>
+                <span class="contatc__subtitle">@riyas_s</span>
+              </a>
+            </div>
+          </div>
+    
+          <div class="contact__information">
+            <img class="contact__icon" src="./image/github.png"></img>
+    
+            <div>
+              <a
+                class="hover-underline"
+                href="https://github.com/riyas11/"
+                target="_blank"
+                style="color: #6a797c"
+                title="click to open github"
+              >
+                <h3 class="contact__title">GitHub</h3>
+                <span class="contatc__subtitle">@riyas11</span>
+              </a>
+            </div>
+          </div>
+    
+          <div class="contact__information">
+            <img class="contact__icon" src="./image/phone.png"></img>
+    
+            <div>
+              <a
+                class="hover-underline"
+                href="tel:+91 9847972892"
+                style="color: #6a797c"
+                title="click to make a call"
+              >
+                <h3 class="contact__title">Call me</h3>
+                <span class="contatc__subtitle">+91 9847972892</span>
+              </a>
+            </div>
+          </div>
+    
+          <div class="contact__information">
+            <img class="contact__icon" src="./image/email.png"></i>
+            <div>
+              <a
+                class="hover-underline"
+                href="mailto:mail.riyass973@gmail.com"
+                style="color: #6a797c"
+                title="click to send email"
+              >
+                <h3 class="contact__title">E-mail</h3>
+    
+                <span class="contatc__subtitle"
+                  >mail.riyass973@gmail.com</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <form  id="contact-form">
+          <div class="contact__inputs">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" class="contact__input" id="name" required />
+            </div>
+    
+            <div class="contact__content">
+              <label for="" class="contact__label">E-mail</label>
+              <input
+                type="email"
+                class="contact__input"
+                id="email"
+                required
+              />
+            </div>
+          </div>
+    
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea
+              required
+              id="message"
+              cols="0"
+              rows="7"
+              class="contact__input"
+              title="Please fill out the this field."
+            ></textarea>
+          </div>
+    
+          <p
+            style="font-size: 12px; margin-top: -15px"
+            title="Put your mail only"
+          >
+            <span style="color: #57c9e0">* </span> You will get a confirmation
+            mail after sending the message.
+          </p>
+          <div>
+            <button
+              id="email-submit"
+              class="button button--flex"
+              style="
+                outline: none;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+              "
+              title="Send message"
+            >
+              Send message
+              <img src="./image/send.png">
+            </button>
+          </div>
+        </form>
+      </div>
+        <div class="footer">
+          
+        </div>
+
+
+
+            
+            
+
+
+
+
+
 
 </body>
 </html>
