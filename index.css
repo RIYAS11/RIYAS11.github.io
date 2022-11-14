@@ -68,7 +68,7 @@ body{
     width: 30px;
     display: none;
 }
-@media only screen and (max-width: 480px) and (min-width: 320px){
+@media only screen and (max-width: 480px) and (min-width: 0px){
   
 }
 
@@ -121,6 +121,7 @@ display: flex;
   border-radius: 0.5rem;
   padding: 1rem;
   border: 1px solid transparent;
+  text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
@@ -153,89 +154,24 @@ display: flex;
    
   
   /* about section  */
+
+                   /* 2nd Home  */
 .about{
 
  display: block;
- /* border: 1px solid red; */
-
  
 }
-@media only screen and (max-width: 370px) and (min-width: 354px){
-  .intro{
-
-    display: block;
-    /* border: 1px solid green; */
-    margin: auto;
-    /* padding-left: 27px */
-   
-   }
-   .me{
-    margin: auto;
-   }
-   
-   .image{
-    padding-left: 27px;
-   }
-}
-@media only screen and (max-width: 400px) and (min-width: 371px){
-  .self>p{
-    padding-left: 70px;
-    padding-right: 0%;
-    margin-left: 0%;
-  
-  }
-  
-   
-}
-@media only screen and (max-width: 450px) and (min-width: 401px){
- 
-  .image>img{
-    margin-left: 5px;
-  }
-  .life{
-    /* padding-left: -200px;
-    padding-right: 0%;
-    padding-right: 50%; */
-    width: 380px;
-    /* padding-left: -50px; */
-    margin-right: 7000px;
-  } 
-  .self>p{
-    margin-left: 80px;
-  } 
-   
-}
-@media only screen and (max-width: 480px) and (min-width: 450px){
-  .self>p{
-    padding-left: 70px;
-    padding-right: 0%;
-    margin-left: 0%;
-  
-  }
-  .image{
-    padding-left: 45px;
-  }
-  .self>div{
-    margin-left: 178px;
-  }
-  .self>a{
-    margin-left: 315px;
-  }
-  .qualification__sections{
-    padding-left: 80px;
-  }
-   
-}
-
 
 .me{
+  
   width: 100%;
-  margin-top: 250px;
-   text-align: center;
+  text-align: center;
+  margin-top: 350px;
 }
 .me>h2{
   font-weight: 600px;
   font-size: 36px;
+  /* border: 1px solid red; */
   color: #232829;
   font-family: "Poppins", sans-serif;
 }
@@ -247,12 +183,17 @@ display: flex;
   margin-top: 10px;
 
 }
+.about{
+
+  width: 100%;
+}
 .intro{
   display: grid;
 
   margin-top: 65px;
   grid-template-columns: repeat(2,1fr);
   padding-left: 200px;
+  /* border: 1px solid yellow; */
 }
 .image>img{
   width: 305px;
@@ -265,7 +206,9 @@ display: flex;
   
 }
 .self{
-  margin-left: -70px;
+  /* margin-left: -70px; */
+  /* border: 1px solid green; */
+ 
  
 }
 .self>p:first-child{
@@ -332,7 +275,94 @@ display: flex;
   margin-left: 5px;
 }
 
-/*==================== QUALIFICATION ====================*/
+@media only screen and (max-width: 1100px) and (min-width: 900px){
+
+.intro{
+
+  padding: 0%;
+  
+}
+.image{
+  margin-left: 100px;
+}
+
+}
+@media only screen and (max-width: 899px) and (min-width: 700px){
+
+  .intro{
+    padding: 0%;
+  }
+  .image{
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 699px) and (min-width: 650px){
+
+  .intro{
+    grid-template-columns: 1fr;
+  }
+  /* .intro{
+    padding: 0%;
+  } */
+  .image{
+    margin: 0%;
+  }
+  .resume{
+    margin-left: 110px;
+  }
+}
+@media only screen and (max-width: 649px) and (min-width: 436px){
+
+  .intro{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .intro{
+    padding: 0%;
+  }
+  .self{
+    margin-left: 70px;
+  }
+  .image{
+    margin: 0%;
+  }
+  .resume{
+    margin-left: 110px;
+  }
+}
+
+@media only screen and (max-width: 435px) and (min-width: 0px){
+
+  .intro{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .intro{
+    padding: 0%;
+  }
+  .self{
+    margin-left: 20px;
+  }
+  .image{
+    margin: 0%;
+  }
+  .life{
+
+    grid-template-columns: repeat(3,1fr);
+  }
+  .resume{
+    margin-left: 100px;
+  }
+}
+
+    /*==================== QUALIFICATION ====================*/
+
+
 .qualification__sections{
   display: grid;
   justify-items: center;
@@ -380,7 +410,7 @@ display: flex;
 
 
 .qualification__sections{
-  width: 500px;
+  width: 100%;
   margin: auto;
 }
 
@@ -449,56 +479,56 @@ display: flex;
   transform: translate(6px, -7px);
 }
 
-@media only screen and (max-width: 551px) and (min-width: 481px){
-  .qualification__sections{
-   padding-left: 0px;
-    margin-right: 0%;
+@media only screen and (max-width: 510px) and (min-width: 400px){
+  
+  
+ .qualification__sections{
+  padding-left: 20px;
+ }
+ .qualification__data{
+  gap: 8px;
+
+ }
+.qualification__rounder{
+ 
+}
    
+}
+
+@media only screen and (max-width: 399px) and (min-width: 0px){
+  
+  
+  .qualification__sections{
+
+   padding-left: 5px;
   }
   .qualification__data{
-
-   
-    /* margin-left: 100px; */
-    grid-template-columns: 10px , 10px;
-    column-gap: 5px;
-    /* padding-left: 100px;
-    m */
-    margin-left: 30px;
-    justify-content: center;
-    border: 1px solid transparent;
-  }
-  
+   gap: 4px;
  
-   
-}
+  }    
+ }
 
-
-@media only screen and (max-width: 500px) and (min-width: 481px){
-
-}
-
-
-.title{
-  width: 100%;
-   text-align: center;
-   margin-top: 200px;
-}
-.title>h2{
-  font-weight: 600px;
-  font-size: 36px;
-  color: #232829;
-  font-family: "Poppins", sans-serif;
-}
-.title>p{
-  font-weight: 400px;
-  color: #6a797c;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-
-}
-
-.skills{
+    /* SKILL */
+    .title{
+      width: 100%;
+       text-align: center;
+       margin-top: 200px;
+    }
+    .title>h2{
+      font-weight: 600px;
+      font-size: 36px;
+      color: #232829;
+      font-family: "Poppins", sans-serif;
+    }
+    .title>p{
+      font-weight: 400px;
+      color: #6a797c;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      margin-top: 10px;
+    
+    }
+ .skills{
   display: grid;
   grid-template-columns: repeat(4,150px);
   margin-top: 80px;
@@ -529,122 +559,395 @@ display: flex;
   color: #232829;
 }
 
+@media only screen and (max-width: 747px) and (min-width: 600px){
 
-
-.projects{
-  width: 100%;
-   text-align: center;
-   margin-top: 200px;
-}
-.projects>h2{
-  font-weight: 600px;
-  font-size: 36px;
-  color: #232829;
-  font-family: "Poppins", sans-serif;
-}
-.projects>p{
-  font-weight: 400px;
-  color: #6a797c;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-
-}
-.project{
-  display: grid;
-  grid-template-columns: repeat(3,300px);
-  gap: 20px;
-   justify-content: center;
-   margin-top: 60px;
-   height: fit-content;
-}
-.project>div>img{
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-}
-.project>div{
-
-  border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-
-}
-.project>div:hover{
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-}
-
-.project>div>div>div>img{
-
-  width: 20px;
-  color: #232829;
-  font-weight: 400px;
-  fill:#57c9e0;
-  
-
-}
-.project>div>div>div>img:last-child{
-  width: 19px;
-  margin-left: 2px;
-}
-.project>div>div{
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
-  padding: 15px;
-  align-content: center;
-  
-}
-.project>div>p{
-  padding: 15px;
-  font-weight: 400px;
-  font-size: 15px;
-  color: #6a797c;
-}
-.project>div>p:last-child{
- 
-  font-weight: 500px;
-  font-size: 15px;
-  margin-top: 10px;
-}
-.git{
-  width: 100%;
-   text-align: center;
-   margin-top: 150px;
-}
-.git>h2{
-  font-weight: 600px;
-  font-size: 36px;
-  color: #232829;
-  font-family: "Poppins", sans-serif;
-}
-.git>p{
-  font-weight: 400px;
-  color: #6a797c;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  margin-top: 10px;
-
-}
-.github-images{
-  display: flex;
+.skills{
+  grid-template-columns: repeat(3,170px);
   justify-content: center;
-  gap: 10px;
-  margin-top: 60px;
-  margin-bottom: 25px;
 }
-.github-images>img{
-  width: 400px;
 }
-.calendar{
-  width: 62%;
-  /* padding: 4rem; */
-  border: none !important;
-  padding: 0;
-  margin: auto;
-}
+@media only screen and (max-width: 599px) and (min-width: 460px){
 
-.contact-me{
+  .skills{
+    grid-template-columns: repeat(2,200px);
+    justify-content: center;
+  }
+  }
+
+
+@media only screen and (max-width: 459px) and (min-width: 380px){
+
+    .skills{
+      grid-template-columns: repeat(2,170px);
+      justify-content: center;
+    }
+    }
+
+    @media only screen and (max-width: 379px) and (min-width: 0px){
+
+      .skills{
+        grid-template-columns: repeat(1,250px);
+        justify-content: center;
+      }
+      }
+  
+  
+      /* PROJECT  */
+
+
+      .projects{
+        width: 100%;
+         text-align: center;
+         margin-top: 200px;
+      }
+      .projects>h2{
+        font-weight: 600px;
+        font-size: 36px;
+        color: #232829;
+        font-family: "Poppins", sans-serif;
+      }
+      .projects>p{
+        font-weight: 400px;
+        color: #6a797c;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        margin-top: 10px;
+      
+      }
+      .project{
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        gap: 20px;
+         justify-content: center;
+         margin-top: 60px;
+         height: fit-content;
+      }
+      .project>div>img{
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+      }
+      .project>div{
+      
+        border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      
+      }
+      .project>div:hover{
+      
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      
+      }
+      
+      .project>div>div>div>img{
+      
+        width: 20px;
+        color: #232829;
+        font-weight: 400px;
+        fill:#57c9e0;
+        
+      
+      }
+      .project>div>div>div>img:last-child{
+        width: 19px;
+        margin-left: 2px;
+      }
+      .project>div>div{
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        padding: 15px;
+        align-content: center;
+        
+      }
+      .project>div>p{
+        padding: 15px;
+        font-weight: 400px;
+        font-size: 15px;
+        color: #6a797c;
+      }
+      .project>div>p:last-child{
+       
+        font-weight: 500px;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+           
+      @media only screen and (max-width: 944px) and (min-width: 895px){
+      
+      .project{
+
+        grid-template-columns: repeat(3,280px);
+      }
+      
+      }
+
+      @media only screen and (max-width: 894px) and (min-width: 775px){
+      
+        .project{
+  
+          grid-template-columns: repeat(3,240px);
+        }
+        
+        }
+
+
+@media only screen and (max-width: 774px) and (min-width: 700px){
+      
+          .project{
+    
+            grid-template-columns: repeat(2,300px);
+          }
+          
+          }        
+
+  @media only screen and (max-width: 699px) and (min-width: 600px){
+      
+            .project{
+      
+              grid-template-columns: repeat(2,260px);
+            }
+            
+            }  
+
+
+@media only screen and (max-width: 599px) and (min-width: 515px){
+      
+              .project{
+        
+                grid-template-columns: repeat(2,240px);
+              }
+              
+              } 
+
+@media only screen and (max-width: 514px) and (min-width: 370px){
+      
+                .project{
+          
+                  grid-template-columns: repeat(1,340px);
+                }
+                
+                } 
+
+  @media only screen and (max-width: 369px) and (min-width: 0px){
+      
+                  .project{
+            
+                    grid-template-columns: repeat(1,280px);
+                  }
+                  
+                  } 
+
+
+
+
+
+      /* GITHUB */
+
+
+      .git{
+        width: 100%;
+         text-align: center;
+         margin-top: 150px;
+      }
+      .git>h2{
+        font-weight: 600px;
+        font-size: 36px;
+        color: #232829;
+        font-family: "Poppins", sans-serif;
+      }
+      .git>p{
+        font-weight: 400px;
+        color: #6a797c;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        margin-top: 10px;
+      
+      }
+      .github-images{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 60px;
+        margin-bottom: 25px;
+      }
+      .github-images>img{
+        width: 400px;
+      }
+      .calendar{
+        width: 62%;
+        /* padding: 4rem; */
+        border: none !important;
+        padding: 0;
+        margin: auto;
+      }
+
+      @media only screen and (max-width: 883px) and (min-width: 770px){
+
+        
+        .github-images{
+      
+          display: grid;
+          grid-template-columns: repeat(2,300px);
+        }
+        .github-images>img{
+      
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 769px) and (min-width: 600px){
+
+        
+        .github-images{
+      
+          display: grid;
+          grid-template-columns: repeat(2,280px);
+        }
+        .github-images>img{
+      
+          width: 100%;
+        }
+      }
+
+
+      @media only screen and (max-width: 599px) and (min-width: 400px){
+
+        
+        .github-images{
+      
+          display: grid;
+          grid-template-columns: repeat(1,300px);
+        }
+        .github-images>img{
+      
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 399px) and (min-width: 0px){
+
+        
+        .github-images{
+      
+          display: grid;
+          grid-template-columns: repeat(1,270px);
+        }
+        .github-images>img{
+      
+          width: 100%;
+        }
+      }
+
+
+
+  /* conatct me  */
+
+  .contact-me{
+    width: 100%;
+     text-align: center;
+     margin-top: 150px;
+  }
+  .contact-me>h2{
+    font-weight: 600px;
+    font-size: 36px;
+    color: #232829;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact-me>p{
+    font-weight: 400px;
+    color: #6a797c;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  
+  }
+  
+  .contact__container {
+    row-gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    gap:30px;
+  }
+  
+  .contact__information {
+    display: flex;
+    margin-bottom: 30px;
+    gap:20px;
+   
+  }
+  
+  .contact__icon{
+    
+    
+    width: 25px;
+    height: 25px;
+  }
+  
+  
+  .contact__content {
+    background-color: #eefafc;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+    margin: 10px;
+  }
+  
+  
+  
+  .contact__input {
+    width: 100%;
+    border: 1px solid transparent;
+    font-weight: 400;
+    color: #232829;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+    background-color: #eefafc;
+   
+  }
+  
+  .contact__inputs{
+    display: flex;
+    
+  
+  }
+  .contact__container>div:first-child{
+    margin-top: 20px;
+  }
+  
+  #email-submit{
+  
+    background-color: #57c9e0;
+    padding: 1rem;
+    border-radius: 00.5rem;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  #email-submit>img{
+  
+    width: 20px;
+    
+  }
+  
+  .contact__content~p{
+    padding-top: 15px;
+  }
+  .contact__information>div:nth-child(2)>a{
+     text-decoration: none;
+  }
+  
+  
+  .contact__information>div>a>h3{
+    font-size: 19px;
+    color:#232829;
+    font-weight: 600px;
+  }
+  .contact-me{
   width: 100%;
    text-align: center;
    margin-top: 150px;
@@ -750,242 +1053,289 @@ display: flex;
   font-weight: 600px;
 }
 
-.footer{
-  
-  height: 60px;
-  background-color: #57c9e0;
-  margin-top: 110px;
- position: absolute;
-  width: 100%;
-  max-width: inherit;
+@media only screen and (max-width: 1194px) and (min-width: 884px){
 
+  .contact__container{
+    margin-left: 50px;
+  }
 }
-.contactme{
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-              /****** lapscreen 1  ******/
-
-  @media only screen and (max-width: 1194px) and (min-width: 884px){
-
-    .cont>p{
-        margin-right: 170px;
+  @media only screen and (max-width: 883px) and (min-width: 770px){
+    .contact__container{
+      margin-left:15px
+     
     }
+  } 
 
-    .home{
-        padding-top:150px;
-   
+
+  @media only screen and (max-width: 769px) and (min-width: 655px){
+    .contact__container{
+      margin-left: 10px;
       }
-      .logo{
-        margin-left: 20px;
-        margin-top: 100px;
+      .contact__inputs{
+        display: flex;
+        /* border: 1px solid red; */
+        
+      
       }
-      .names{
-        margin-left: 10px;
+      .contact__inputs>div{
+        width: 100px;
       }
-      .he{
-        margin-top: -10px;
-      }
-      .dev{
-        margin-top: -10px;
-      }
-      .intro{
-        /* border: 1px solid teal; */
-      }
-      .image{
-        margin-left: -40px;
-        margin-right: 0;
-      }
-      .self{
-         margin-left: -60px;
-      }
-      .contact__container{
-        margin-left: 50px;
-      }
-   
+        }
+        @media only screen and (max-width: 654px) and (min-width: 625px){
+          .contact__container{
+            margin-left: 15px;
+            }
+            .contact__inputs{
+              display: flex;
+              
+            }
+            .contact__content{
+              width: 300px;
+            }
+            .contact__inputs>div{
+              width: 100px;
+              border: 1px solid red;
+            }
+        }
+      
+      
+        
+        @media only screen and (max-width: 624px) and (min-width: 581px){
+          .contact__container{
+            margin-left: 20px;
+            }
+            .contact__inputs{
+              display: flex;
+              
+            }
+            .contact__content{
+              width: 250px;
+            }
+            .contact__inputs>div{
+              width: 90px;
+          
+            }
+        }
+      
+
+
+        @media only screen and (max-width: 580px) and (min-width: 410px){
+          .contact__container{
+            margin-left: 20px;
+            display: grid;
+          
+            }
+            .contact__container>div:first-child{
+          
+              width: 400px;
+              
+            }
+            .contact__inputs{
+              display: flex;
+              
+            }
+            .contact__content{
+              width: 350px;
+             
+            }
+            .contact__inputs>div{
+              width: 150px;
+             
+            }
+        }
+
+
+
+      
+        @media only screen and (max-width: 409px) and (min-width: 0px){
+          .contact__container{
+            margin-left: 20px;
+            display: grid;
+          
+            }
+            .contact__container>div:first-child{
+          
+              width: 300px;
+              
+            }
+            .contact__inputs{
+              display: flex;
+              
+            }
+            .contact__content{
+              width: 280px;
+             
+            }
+            .contact__inputs>div{
+              width: 100px;
+             
+            } 
+      
+        }
+  
+
+
+
+     
+
+    
+
+
+
+
+.footer{
+  width: 100%;
+  background-color: #57c9e0;
+  height: 80px;
+  margin-top: 100px;
 }
 
 
-         /**** lap screem 2  *****/
+/* home page */
 
-@media only screen and (max-width: 883px) and (min-width: 770px){
+
+@media only screen and (max-width: 1194px) and (min-width: 884px){
 
   .cont>p{
-      margin-right: 100px;
+      margin-right: 170px;
   }
-  .cont>ul>a{
-      margin-right: 50px;
-  }
+
   .home{
-    padding-top:150px;
-    margin-left: -200px;
-
-  }
-  .logo{
-    margin-top: 100px;
-    margin-right:0px ;
-    margin-right: -80px;
-  }
-  .names{
-   
-  }
-  .he{
-    margin-top: -10px;
-  }
-  .dev{
-    margin-top: -10px;
-  }
-  .dev{
-    margin-bottom: 10px;
-  }
-  .fullname{
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-  .hi{
-    margin-bottom: -10px;
-  }
-  .image{
-     margin-left: -120px;
-  }
-  .github-images{
-
-    display: grid;
-    grid-template-columns: repeat(2,300px);
-  }
-  .github-images>img{
-
-    width: 100%;
-  }
-  .contact__container{
-    margin-left:40px
-   
+      padding-top:150px;
+ 
+    }
+    .logo{
+      margin-left: 20px;
+      margin-top: 100px;
+    }
+    .names{
+      margin-left: 10px;
+    }
+    .he{
+      margin-top: -10px;
+    }
+    .dev{
+      margin-top: -10px;
+    }
   }
 
-}
 
+  @media only screen and (max-width: 883px) and (min-width: 770px){
 
-         /***** Ipad screen *******/
+    .cont>p{
+        margin-right: 100px;
+    }
+    .cont>ul>a{
+        margin-right: 50px;
+    }
+    .home{
+      padding-top:150px;
+      margin-left: -200px;
+  
+    }
+    .logo{
+      margin-top: 100px;
+      margin-right:0px ;
+      margin-right: -80px;
+    }
+    .names{
+     
+    }
+    .he{
+      margin-top: -10px;
+    }
+    .dev{
+      margin-top: -10px;
+    }
+    .dev{
+      margin-bottom: 10px;
+    }
+    .fullname{
+      margin-top: -10px;
+      margin-bottom: -10px;
+    }
+    .hi{
+      margin-bottom: -10px;
+    }
+  }
 
   @media only screen and (max-width: 769px) and (min-width: 481px){
   
-     .open{
-      display: block;
-      cursor: pointer;
-      margin-right: -50px;
-     }
-     .cont>ul>a{
-      display: block;
-      width: fit-content;
-      margin: 80px auto 0 auto;
-      text-align: center;
-      transition: 0.5s;
-      
-     }
-     .cont>ul{
-      height: 600px;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      background: rgb(255, 255, 255);
-      transition: 0.3s;
-      overflow: hidden;
-      display: none;
-      box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
-     }
-     .close{
-      /* display: block; */
-      padding-left: 0px;
-      margin-right: -10%;
-      
-     }
-     .open{
-      /* display: none; */
-     }
-     .cont>p{
-      margin-left: -100px;
-      margin-right: 210px;
-     }
-     .cont>ul>a:hover{
-  
-      color: #57c9e0;
-      text-decoration: underline;
-      text-underline-offset: 11px;
-      text-decoration-thickness: 3px;
-  }
-  
-  
-  .logo>img{
-    display: none;
-  }
-  .fullname{
-    font-size: 55px;
-  }
-  .names{
-    margin-left: -200px;
-  }
-  .he{
-    line-height: 60px;
-    font-size: 45px;
-  
-  }
-  
-  .home{
-    margin-left: 40px;
-    margin-top: -50px;
-  }
-  .dev{
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-  .github-images{
-
-    display: grid;
-    grid-template-columns: repeat(1,300px);
-    justify-content: center;
-    align-content: center;
-    border: 1px solid transparent;
-    margin-left: 120px;
-    
-  }
-  .git{
-    margin-left: 60px;
-  }
-  .github-images>img{
-
-    width: 100%;
-  }
-.calendar{
-  padding-left: 100px;
-}
-.contact__container{
-margin-left: 100px;
-}
-.contact__inputs{
-  display: flex;
-  /* border: 1px solid red; */
-  
-
-}
-.contact__inputs>div{
-  width: 100px;
-}
+    .open{
+     display: block;
+     cursor: pointer;
+     margin-right: -50px;
+    }
+    .cont>ul>a{
+     display: block;
+     width: fit-content;
+     margin: 80px auto 0 auto;
+     text-align: center;
+     transition: 0.5s;
+     
+    }
+    .cont>ul{
+     height: 600px;
+     position: absolute;
+     top: 80px;
+     left: 0;
+     right: 0;
+     width: 100%;
+     background: rgb(255, 255, 255);
+     transition: 0.3s;
+     overflow: hidden;
+     display: none;
+     box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+    }
+    .close{
+     /* display: block; */
+     padding-left: 0px;
+     margin-right: -10%;
+     
+    }
+    .open{
+     /* display: none; */
+    }
+    .cont>p{
+     margin-left: -100px;
+     margin-right: 210px;
+    }
+    .cont>ul>a:hover{
+ 
+     color: #57c9e0;
+     text-decoration: underline;
+     text-underline-offset: 11px;
+     text-decoration-thickness: 3px;
+ }
+ 
+ 
+ .logo>img{
+   display: none;
+ }
+ .fullname{
+   font-size: 55px;
+ }
+ .names{
+   margin-left: -200px;
+ }
+ .he{
+   line-height: 60px;
+   font-size: 45px;
+ 
+ }
+ 
+ .home{
+   margin-left: 10px;
+   margin-top: -50px;
+ }
+ .dev{
+   font-size: 15px;
+   margin-bottom: 20px;
+ }
   }
 
 
-
-             /**** Mobile screem  *****/
-
-  @media only screen and (max-width: 480px) and (min-width: 320px){
+  @media only screen and (max-width: 480px) and (min-width: 0px){
   
     .open{
      display: block;
@@ -1057,9 +1407,9 @@ margin-left: 100px;
       margin-bottom: 30px;
     }
     .home{
-      margin-left: -180px;
+      margin-left: -200px;
       margin-top: -70px;
-      margin-right:0px     ;
+      margin-right:0px;
     }
     .names{
       margin-left: 0px;
@@ -1067,351 +1417,4 @@ margin-left: 100px;
     .logo>img{
       display: none;
     }
-    .intro{
-      display: block;
-    }
-    .image{
-      margin-left: -95px;
-    }
-    .image>img{
-      width: 200px;
-      height: 200px;
-    }
-    .self{
-      margin-left: -150px;
-      margin-right: -100px;
-      /* text-align: center; */
-    }
-    .life{
-      margin-left: -23px;
-    }
-    .me{
-      margin-left: 50px;
-    }
-    .resume{
-      margin-left: 120px;
-    }
-    .qualification__sections{
-
-      /* border: 1px solid red; */
-      width: 410px;
-      margin-left: 20px;
-    }
-    .qual{
-      margin-left: 70px;
-    }
-    .skills{
-      /* border: 1px solid red; */
-      grid-template-columns: repeat(2,180px);
-      /* margin-left: 60px; */
-      gap: 20px;
-    }
-    .title{
-      width: 100%;
-      text-align: center;
-      padding-left: 0px;
-    }
-    .skill{
-    
-    margin-left: 60px;
-    }
-    .skills>div{
-  
-    }
-    .project{
-      grid-template-columns: repeat(1,330px);
-      margin-left: 100px;
-      gap: 25px;
-    }
-    .projects{
-      margin-left: 50px;
-    }
-    .git{
-      margin-left: 40px;
-    }
-    .github-images{
-
-      display: grid;
-      grid-template-columns: repeat(1,250px);
-      justify-content: center;
-      align-content: center;
-      border: 1px solid transparent;
-      margin-left: 50px;
-      
-    }
-    .github-images>img{
-  
-      width: 100%;
-    }
-    .calendar{
-      padding-left: 20px;
-    }
-
-
-    .contact__container{
-      margin-left: 50px;
-      display: grid;
-      /* border: 1px solid red; */
-      }
-      .contact__inputs{
-        display: flex;
-        /* border: 1px solid red; */
-        
-      
-      }
-      .contact__inputs>div{
-        width: 100px;
-      }
-      .footer{
-        
-      }
- }
-
- 
- @media only screen and (max-width: 480px) and (min-width: 372px){
- 
-  .project{
-    grid-template-columns: repeat(1,400px);
-    margin-left: -40px;
-    gap: 25px;
   }
-  .project>div{
-    width: 400px;
-  }
- }
-
-
-
-
-
-     /***** dummy low screen  *****/
-
- @media only screen and (max-width: 319px) and (min-width: 0px){
-  
-  .open{
-   display: block;
-   cursor: pointer;
-   margin-right: -60px;
-  }
-  .cont>ul{
-   display: none;
-  }
-  .cont>p{
-   margin-left: -60px;
-   margin-right: 80px;
-  }
-
-
-
-  .open{
-      display: block;
-      cursor: pointer;
-      margin-right: -100px;
-     }
-     .cont>ul>a{
-      display: block;
-      width: fit-content;
-      margin: 80px auto 0 auto;
-      text-align: center;
-      transition: 0.5s;
-      
-     }
-     .cont>ul{
-      height: 1000px;
-      position: absolute;
-      top: 80px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      background: rgb(255, 255, 255);
-      transition: 0.3s;
-      overflow: hidden;
-      display: none;
-      box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
-     }
-     .close{
-      /* display: block; */
-      margin-right: -100px;
-      
-     }
-     .open{
-      /* display: none; */
-     }
-     
-     .cont>ul>a:hover{
-  
-      color: #57c9e0;
-      text-decoration: underline;
-      text-underline-offset: 11px;
-      text-decoration-thickness: 3px;
-  }
-
-
-  .fullname{
-    font-size: 35px;
-  }
-  .he{
-    font-size: 30px
-  }
-  .dev{
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  .home{
-    margin-left: -200px;
-    margin-top: -100px;
-    margin-right:50px     ;
-  }
-  .names{
-    margin-left: 0px;
-  }
-  .logo>img{
-    display: none;
-  }
-}
-
-
-
-  /**** Intro ****/
-
-  @media only screen and (max-width: 660px) and (min-width: 481px){
-  
-    .me{
-      text-align: center;
-      /* width: 100%; */
-      margin-left: 50px;
-    }
-    .image>img{
-      width: 200px;
-      height: 300px;
-      margin-left: -300px;
-    }
-  }
-
-  @media only screen and (max-width: 769px) and (min-width: 661px){
-  
-    .me{
-      text-align: center;
-    }
-    .image{
-      margin-left: -140px;
-
-    }
-
-    .image > img{
-      width: 230px;
-      height: 300px;
-    }
-  }
-  
-
-  @media only screen and (max-width: 480px) and (min-width: 372px){ */
- 
-  .intro{
-    display: block;
-  }
-  .image{
-    margin-left: -60px;
-  }
-  .image>img{
-    width: 200px;
-    height: 200px;
-  }
-  .self{
-    margin-left: -300px;
-    /* margin-right: -100px; */
-    text-align: center;
- }
-  .life{
-    margin-left: 150px;
-  }
-  .me{
-    margin-left: 50px;
-  }
-  .resume{
-    margin-left: 290px;
-  }
-  .qualification__sections{
-
-    /* border: 1px solid red; */
-    width: 400px;
-    margin-left: 40px;
-  }
-  .qual{
-    margin-left: 60px;
-  }
-  .project{
-    grid-template-columns: repeat(1,250px);
-  }
-}
-
-@media only screen and (max-width: 720px) and (min-width: 481px){
-   
-  .skills{
-    /* border: 1px solid red; */
-    grid-template-columns: repeat(3,150px);
-    margin-left: 20px;
-    gap: 20px;
-  }
-  .skills>div{
-
-  }
-}
-
-@media only screen and (max-width: 585px) and (min-width: 481px){
-  .skills{
-    /* border: 1px solid red; */
-    grid-template-columns: repeat(3,150px);
-    margin-left: 80px;
-    gap: 20px;
-  }
-}
-
-@media only screen and (max-width: 969px) and (min-width: 661px){
- 
-  .project{
-    grid-template-columns: repeat(2,300px);
-    
-  }
-}
-@media only screen and (max-width: 660px) and (min-width: 481px){
- 
-  .project{
-    grid-template-columns: repeat(2,250px);
-    margin-left: 100px;
-    
-  }
-  .projects{
-    text-align: center;
-    margin-left: 60px;
-  }
-}
-
-@media screen and (min-width: 2160px) {
-  .calendar {
-    width: 40%;
-  }
-
-  .github-images img {
-    width: 15%;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .calendar {
-    width: 65%;
-  }
-
-  .github-images img {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 1024px) {
-
-  .calendar {
-    width: 65%;
-  }
-
-  .github-images img {
-    width: 25%;
-  }
-}
