@@ -287,7 +287,7 @@ display: flex;
 }
 
 }
-@media only screen and (max-width: 899px) and (min-width: 700px){
+@media only screen and (max-width: 900px) and (min-width: 700px){
 
   .intro{
     padding: 0%;
@@ -312,7 +312,7 @@ display: flex;
     margin-left: 110px;
   }
 }
-@media only screen and (max-width: 649px) and (min-width: 436px){
+@media only screen and (max-width: 650px) and (min-width: 436px){
 
   .intro{
     grid-template-columns: 1fr;
@@ -334,7 +334,7 @@ display: flex;
   }
 }
 
-@media only screen and (max-width: 435px) and (min-width: 0px){
+@media only screen and (max-width: 436px) and (min-width: 0px){
 
   .intro{
     grid-template-columns: 1fr;
@@ -575,7 +575,7 @@ display: flex;
   }
 
 
-@media only screen and (max-width: 459px) and (min-width: 380px){
+@media only screen and (max-width: 460px) and (min-width: 380px){
 
     .skills{
       grid-template-columns: repeat(2,170px);
@@ -583,7 +583,7 @@ display: flex;
     }
     }
 
-    @media only screen and (max-width: 379px) and (min-width: 0px){
+    @media only screen and (max-width: 380px) and (min-width: 0px){
 
       .skills{
         grid-template-columns: repeat(1,250px);
@@ -617,13 +617,25 @@ display: flex;
       .project{
         display: grid;
         grid-template-columns: repeat(3,300px);
+        /* grid-template-rows: repeat(2,420px); */
         gap: 20px;
          justify-content: center;
+          width: 100%;
+          align-content: center;
          margin-top: 60px;
          height: fit-content;
+        
       }
+
+      /*for span*/
+
+      .techstack{
+        font-weight: bold;
+      }
+     
       .project>div>img{
         width: 100%;
+        height:210px;
         border-radius: 8px 8px 0 0;
       }
       .project>div{
@@ -644,7 +656,6 @@ display: flex;
         color: #232829;
         font-weight: 400px;
         fill:#57c9e0;
-        
       
       }
       .project>div>div>div>img:last-child{
@@ -685,13 +696,14 @@ display: flex;
       
         .project{
   
-          grid-template-columns: repeat(3,240px);
+          grid-template-columns: repeat(2,300px);
         }
+
         
         }
 
 
-@media only screen and (max-width: 774px) and (min-width: 700px){
+@media only screen and (max-width: 775px) and (min-width: 700px){
       
           .project{
     
@@ -710,25 +722,33 @@ display: flex;
             }  
 
 
-@media only screen and (max-width: 599px) and (min-width: 515px){
+@media only screen and (max-width: 599px) and (min-width: 514px){
       
               .project{
         
                 grid-template-columns: repeat(2,240px);
               }
               
+              .project>div:first-child>div{
+             
+                padding: 5px;
+              }
+              .project>div:nth-child(2)>div{
+              
+                padding: 5px;
+              }
+              
               } 
 
-@media only screen and (max-width: 514px) and (min-width: 370px){
+@media only screen and (max-width: 515px) and (min-width: 370px){
       
                 .project{
           
                   grid-template-columns: repeat(1,340px);
                 }
-                
                 } 
 
-  @media only screen and (max-width: 369px) and (min-width: 0px){
+  @media only screen and (max-width: 370px) and (min-width: 0px){
       
                   .project{
             
@@ -824,7 +844,7 @@ display: flex;
         }
       }
 
-      @media only screen and (max-width: 399px) and (min-width: 0px){
+      @media only screen and (max-width: 400px) and (min-width: 0px){
 
         
         .github-images{
@@ -1147,7 +1167,7 @@ display: flex;
 
 
       
-        @media only screen and (max-width: 409px) and (min-width: 0px){
+        @media only screen and (max-width: 410px) and (min-width: 0px){
           .contact__container{
             margin-left: 20px;
             display: grid;
