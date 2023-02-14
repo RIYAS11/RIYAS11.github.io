@@ -44,6 +44,11 @@ cont.forEach(el => {
 })
 
 
+function downl(){
+  
+  window.open("https://drive.google.com/file/d/1GkEuijh15mIkpGbTk46RRbVLk1Sr0rQI/view?usp=sharing");
+}
+
 
 
 
