@@ -88,6 +88,14 @@ display: flex;
 
 }
 
+.mine{
+
+  font-size: 15px;
+  font-weight: 10px;
+  margin-bottom: 10px;
+  color: #000000ce;
+}
+
 .hi{
 
   font-size: 16px;
@@ -146,7 +154,7 @@ display: flex;
     color:  #232829;
     font-weight: 700px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     font-family: 'Poppins', sans-serif;
   }
 
@@ -530,7 +538,7 @@ display: flex;
     }
  .skills{
   display: grid;
-  grid-template-columns: repeat(4,150px);
+  grid-template-columns: repeat(4,180px);
   margin-top: 80px;
   justify-content: center;
   gap: 25px;
@@ -616,7 +624,7 @@ display: flex;
       }
       .project{
         display: grid;
-        grid-template-columns: repeat(3,300px);
+        grid-template-columns: repeat(3,350px);
         /* grid-template-rows: repeat(2,420px); */
         gap: 20px;
          justify-content: center;
@@ -652,15 +660,17 @@ display: flex;
       
       .project>div>div>div>img{
       
-        width: 20px;
+        width: 35px;
         color: #232829;
         font-weight: 400px;
         fill:#57c9e0;
+        
       
       }
       .project>div>div>div>img:last-child{
-        width: 19px;
+        width: 35px;
         margin-left: 2px;
+      
       }
       .project>div>div{
         display: flex;
@@ -682,8 +692,54 @@ display: flex;
         font-size: 15px;
         margin-top: 10px;
       }
+
+
+      /* live and github buuton part */
+
+      .live{
+
+       
+          margin-bottom: 20px;
+  
+      }
+      .live>button{
+       
+        display: flex;
+        text-align: center;
+        background-color: white;
+        border: none;
+      }
+
+      .live>button:first-child{
+         margin-left: 30px;
+      }
+
+      .live>button:last-child{
+          margin-right: 30px;
+      }
+
+      .live>button>img{
+
+        width: 17px;
+        margin-right: 5px;
+      }
+
+      .live>button>p{
+        font-weight: 300px;
+        font-size: 16px;
+      }
+
+      .live>button:hover{
+
+        padding: 5px;
+        background-color: #57c9e0;
+      }
+
+      
+
+
            
-      @media only screen and (max-width: 944px) and (min-width: 895px){
+      @media only screen and (max-width: 1090px) and (min-width: 895px){
       
       .project{
 
@@ -1214,10 +1270,23 @@ display: flex;
 /* home page */
 
 
-@media only screen and (max-width: 1194px) and (min-width: 884px){
+@media only screen  and (min-width: 1195px){
 
   .cont>p{
-      margin-right: 170px;
+    margin-right: 50px;
+}
+
+}
+
+@media only screen and (max-width: 1194px) and (min-width: 900px){
+
+
+.mine{
+  font-size: 15px;
+}
+
+  .cont>p{
+      margin-right: 50px;
   }
 
   .home{
@@ -1240,10 +1309,14 @@ display: flex;
   }
 
 
-  @media only screen and (max-width: 883px) and (min-width: 770px){
+  @media only screen and (max-width: 899px) and (min-width: 770px){
 
+
+    .mine{
+      font-size: 12px;
+    }
     .cont>p{
-        margin-right: 100px;
+        margin-right: 44px;
     }
     .cont>ul>a{
         margin-right: 50px;
@@ -1281,6 +1354,10 @@ display: flex;
 
   @media only screen and (max-width: 769px) and (min-width: 481px){
   
+
+    .mine{
+      font-size: 14px;
+    }
     .open{
      display: block;
      cursor: pointer;
@@ -1294,8 +1371,12 @@ display: flex;
      transition: 0.5s;
      
     }
+
+  
     .cont>ul{
-     height: 600px;
+
+      
+     height:100vh;
      position: absolute;
      top: 80px;
      left: 0;
@@ -1357,6 +1438,9 @@ display: flex;
 
   @media only screen and (max-width: 480px) and (min-width: 0px){
   
+    .mine{
+      font-size: 14px;
+    }
     .open{
      display: block;
      cursor: pointer;
@@ -1438,3 +1522,4 @@ display: flex;
       display: none;
     }
   }
+  

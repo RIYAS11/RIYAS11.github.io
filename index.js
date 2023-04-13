@@ -55,12 +55,6 @@ function downl(){
 
 
 
-let type = new Typed(".chg", {
-  strings: ['  I have knowledge in Java , Spring Boot , Hibernate , SQL , AWS.'],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true
-})
 
 
 
