@@ -567,7 +567,7 @@ display: flex;
   color: #232829;
 }
 
-@media only screen and (max-width: 747px) and (min-width: 600px){
+@media only screen and (max-width: 800px) and (min-width: 600px){
 
 .skills{
   grid-template-columns: repeat(3,170px);
