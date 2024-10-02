@@ -42,7 +42,7 @@
 
       <!-- <p class="hi">Hi,my name is</p> -->
       <h1 class="fullname">Riyas S</h1>
-      <h1 class="he">I build things for the web.<h1>
+      <h1 class="he">  <span id="element"> </span><h1>
           <p class="mine">A creative and diligent aspiring full-stack
             developer with a specialization in Java
             backend development.<br> Self-believing and
@@ -542,4 +542,19 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
 <script src="./index.js"></script>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: [' I am a Full Stack Developer', 'I am a Java BackEnd Developer' , 'I build things for the web.'],
+      typeSpeed: 100,
+      backspeed: 100,
+      loop:true
+    });
+  </script>
+</body>
