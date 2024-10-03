@@ -46,7 +46,7 @@ cont.forEach(el => {
 
 function downl(){
   
-  window.open("https://drive.google.com/file/d/1djHxqMw2xl2AHZCABGTCNMtSqx5erzLi/view?usp=sharing");
+  window.open("https://drive.google.com/file/d/1ygVtzEJjbG7UUwxn4-FRx7lX8Ne3bWBU/view?usp=sharing");
 }
 
 
